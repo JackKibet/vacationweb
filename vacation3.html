@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamscape Vacations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #338f17ee;
+           
+            min-height: 100vh;
+        }
+        header {
+
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .section p {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+        .form-section form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .form-section input, .form-section select, .form-section button {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-section button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #003366;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+        #logo{
+            display: inline-block;
+            position: relative;
+            top: -100px;
+            border: 3px solid lightblue;
+            background-color: #6ab65380;
+            color: white;
+        }
+        #title{
+            display: inline-block;
+            color: blue;
+        }
+        #motto{
+            display: inline-block;
+            color: orange;
+            font-size: 40px;
+            font-family: cursive;
+        }
+        header{
+            background-image: url("B2each.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Dreamscape Vacations</h1><br>
+        <p id="motto">Your journey to paradise begins here.</p>
+
+    </header>
+    <h1 id="logo">DREAMVACY</h1>
+
+    <nav>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking">Book Now</a>
+    </nav>
+
+    <div class="section" id="destinations">
+        <h2>Popular Destinations</h2>
+        <p>Explore breathtaking beaches, serene mountains, and vibrant cities around the globe.</p>
+    </div>
+
+    <div class="section" id="packages">
+        <h2>Vacation Packages</h2>
+        <p>Choose from all-inclusive packages, adventure tours, or tailor-made experiences.</p>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>At Dreamscape Vacations, we specialize in creating unforgettable travel experiences for our clients.</p>
+    </div>
+
+    <div class="form-section" id="booking">
+        <h2>Book Your Vacation</h2>
+        <form>
+            <label for="destination">Choose Your Destination:</label>
+            <select id="destination" name="destination">
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+                <option value="adventure">Adventure</option>
+            </select>
+
+            <label for="dates">Select Travel Dates:</label>
+            <input type="date" id="dates" name="dates">
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="20">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to start planning your dream vacation? Contact us today!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dreamscape Vacations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
